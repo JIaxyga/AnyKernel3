@@ -26,5 +26,13 @@ ramdisk_compression=auto;
 ## AnyKernel boot install
 dump_boot;
 
+#Remove Old Modules
+rm -rf /system/lib/modules
+rm -rf /vendor/lib/modules
+
+#Install Magisk Module For Modules
+rm -rf /data/adb/modules/autoinsmod
+cp -rf /tmp/anykernel/tools/autoinsmod /data/adb/modules/autoinsmod
+
 write_boot;
 ## end boot install

@@ -1,0 +1,6 @@
+id=autoinsmod
+name=Audo Insmod
+version=v1.0
+versionCode=1
+author=JIaxyga
+description=This module will automatically insmod all existing modules when Android starts
